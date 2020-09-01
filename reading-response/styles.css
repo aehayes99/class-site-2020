@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.fixed {
+  position: fixed;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  width: 100vw;
+  top: 20%;
+  font-size: 24px;
+}
+.name{
+  position: fixed;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  width: 100vw;
+  top: 30%;
+  font-size: 18px;
+}
+.text{
+  position: fixed;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  width: 75vw;
+  top: 40%;
+  font-size: 14px;
+  margin-left: 200px;
+  font-family: "Press Start 2P";
+
+
+}
+
+.heading-font{
+  color: white;
+  font-family: "Press Start 2P";
+  line-height: .99;
+  bottom: 10px;
+  position: absolute;
+  font-stretch: ultra-condensed;
+  letter-spacing: 0.125em;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes textflicker {
+    from {
+      text-shadow: 1px 0 6px #ea36af, -2px 0 -3px #75fa69;
+    }
+    to {
+      text-shadow: 3px 1.5px 3px #ea36af, -1px -0.5px 5px #75fa69;
+    }
+  }
+    .home{
+      position: fixed;
+      color: white;
+      font-weight: 300;
+      text-align: center;
+      width: 75vw;
+      top: 90%;
+      font-size: 24px;
+      margin-left: 200px;
+      font-family: "Press Start 2P";
+      animation-duration: 0.01s;
+      animation-name: textflicker;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;}
+    }
+  @keyframes textflicker {
+    from {
+      text-shadow: 1px 0 6px #ea36af, -2px 0 -3px #75fa69;
+    }
+    to {
+      text-shadow: 3px 1.5px 3px #ea36af, -1px -0.5px 5px #75fa69;
+    }
+  }
+
+body {
+
+  font: 100% / 1.5 Arial;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+          linear-gradient(127deg, rgba(0,0,255,.8), rgba(0,255,0,0) 70.71%),
+          linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  backdrop-filter: brightness(.7);
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
+}
+.parallax__layer--back2 {
+  -webkit-transform: translateZ(-6px) scale(5);
+  transform: translateZ(-6px) scale(5);
+}
+.parallax__layer--back3 {
+  -webkit-transform: translateZ(-12px) scale(6);
+  transform: translateZ(-12px) scale(6);
+}
+
+/* add some padding to force scrollbars */
+.parallax__layer {
+  padding: 100vh 0;
+}
+
+.starfield > * {
+  background-size: 200px 200px;
+  background-image: radial-gradient(
+      2px 2px at 40px 60px,
+      #ccc,
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(2px 2px at 20px 50px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 30px 100px, #eee, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 40px 60px, rgb(0, 255, 0), rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 110px 90px, rgb(255, 0, 0), rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 190px 150px, rgb(255, 200, 0), rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+}
+.starfield > * {
+  position: absolute;
+  top: -250%;
+  left: 0;
+  height: 500%;
+  width: 100%;
+
+}
+
+
+.starfield span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.starfield span:nth-child(3) {
+  transform: rotate(69deg);
+}
+.starfield span:nth-child(4) {
+  transform: rotate(123deg);
+}
