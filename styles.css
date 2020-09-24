@@ -61,6 +61,23 @@
       animation-iteration-count: infinite;
       animation-direction: alternate;
   }
+  .screen{
+    height: 50%;
+    font-size: 24px;
+    color: white;
+    font-family: "Press Start 2P";
+    line-height: .99;
+    top: 400px;
+    margin-left: 200px;
+    position: absolute;
+    font-stretch: ultra-condensed;
+    letter-spacing: 0.125em;
+      animation-duration: 0.01s;
+      animation-name: textflicker;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+
 
 
   @keyframes textflicker {
